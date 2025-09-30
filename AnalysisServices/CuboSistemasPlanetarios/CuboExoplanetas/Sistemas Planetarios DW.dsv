@@ -1,0 +1,440 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d7f907ce-3f41-4ab2-9978-2a86850cbf93" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Sistemas Planetarios DW2</ID>
+  <Name>Sistemas Planetarios DW</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7079" scrolltop="-728" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="24617" y="13610" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_ClasificacionPlanetas" left="13140" top="7492" logicalid="12" controlid="1" masterid="0" hint1="0" hint2="0" width="4890" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00001a130000d30b0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_DIM_ClasificacionPlanetas" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_DescubrimientoPlanetas" left="9228" top="13906" logicalid="13" controlid="2" masterid="0" hint1="0" hint2="0" width="4212" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e000074100000d30b0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_DIM_DescubrimientoPlanetas" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_Estrellas" left="6898" top="0" logicalid="14" controlid="3" masterid="0" hint1="0" hint2="0" width="3471" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00008f0d00000a100000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_DIM_Estrellas" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_SistemasPlanetarios" left="0" top="7132" logicalid="15" controlid="4" masterid="0" hint1="0" hint2="0" width="4128" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e000020100000a30e0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_DIM_SistemasPlanetarios" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_Tiempo" left="3828" top="13906" logicalid="16" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00006b0a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_DIM_Tiempo" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FACT_Exoplanetas" left="6979" top="5745" logicalid="17" controlid="6" masterid="0" hint1="0" hint2="0" width="4212" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00007410000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_FACT_Exoplanetas" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="10891" top="8495" logicalid="18" controlid="7" masterid="0" hint1="0" hint2="0" width="2549" height="910" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FACT_Exop__clasi__440B1D61]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="6" sourceattachpoint="22" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="13140" y="9005" />
+                    <point x="12036" y="9005" />
+                    <point x="12036" y="8953" />
+                    <point x="11591" y="8953" />
+                    <point x="11591" y="8795" />
+                    <point x="11191" y="8795" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8785" top="10445" logicalid="19" controlid="8" masterid="0" hint1="0" hint2="0" width="2949" height="3961" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FACT_Exop__desc___4316F928]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="6" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="11334" y="13906" />
+                    <point x="11334" y="12457" />
+                    <point x="9085" y="12457" />
+                    <point x="9085" y="10745" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4929" top="10145" logicalid="20" controlid="9" masterid="0" hint1="0" hint2="0" width="2350" height="4261" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FACT_Exop__tiemp__44FF419A]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="6" sourceattachpoint="4" destattachpoint="30" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="5328" y="13906" />
+                    <point x="5328" y="10445" />
+                    <point x="6979" y="10445" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7135" top="3607" logicalid="21" controlid="10" masterid="0" hint1="0" hint2="0" width="1898" height="2438" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FACT_Exop__st_sk__4222D4EF]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="6" sourceattachpoint="5" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="8633" y="4106" />
+                    <point x="8633" y="5306" />
+                    <point x="7435" y="5306" />
+                    <point x="7435" y="5745" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3828" top="6845" logicalid="22" controlid="11" masterid="0" hint1="0" hint2="0" width="3451" height="2560" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FACT_Exop__sy_sk__412EB0B6]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="6" sourceattachpoint="21" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="4128" y="9005" />
+                    <point x="5328" y="9005" />
+                    <point x="5328" y="7145" />
+                    <point x="6979" y="7145" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-7079</DiagramViewPortLeft>
+            <DiagramViewPortTop>-728</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>75</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Sistemas Planetarios DW2</DataSourceID>
+  <Schema>
+    <xs:schema id="Sistemas_x0020_Planetarios_x0020_DW2" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Sistemas_x0020_Planetarios_x0020_DW2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6b51a067-7c2b-4073-9d54-f798bbe1e81e">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DIM_ClasificacionPlanetas" msprop:DbSchemaName="dbo" msprop:design-time-name="032f91d1-3950-4740-9e5b-95619565dd6c" msprop:FriendlyName="DIM_ClasificacionPlanetas" msprop:TableType="Table" msprop:DbTableName="DIM_ClasificacionPlanetas">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="clasif_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="clasif_sk" msprop:DbColumnName="clasif_sk" msprop:design-time-name="4d77c90e-7f5b-419a-b209-24295d2fc456" type="xs:int" />
+                  <xs:element name="pl_clasificacion_id" msprop:FriendlyName="pl_clasificacion_id" msprop:DbColumnName="pl_clasificacion_id" msprop:design-time-name="a527b14a-a801-4292-9b33-0a12e2e336b3" type="xs:int" />
+                  <xs:element name="pl_tipo" msprop:FriendlyName="pl_tipo" msprop:DbColumnName="pl_tipo" msprop:design-time-name="2a1727ff-0f77-4756-86de-72d11e68183b">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pl_categoria" msprop:FriendlyName="pl_categoria" msprop:DbColumnName="pl_categoria" msprop:design-time-name="4bf3a3e7-ad0f-42c8-b012-3c6b8d50411c">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pl_clasificacion_temperatura" msprop:FriendlyName="pl_clasificacion_temperatura" msprop:DbColumnName="pl_clasificacion_temperatura" msprop:design-time-name="c79cb314-cc6f-43e4-9205-95040e528c71">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pl_status" msprop:FriendlyName="pl_status" msprop:DbColumnName="pl_status" msprop:design-time-name="c23b17e4-f480-4642-a5b1-6d09962bc3db">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_DescubrimientoPlanetas" msprop:DbSchemaName="dbo" msprop:design-time-name="b505b495-5835-4872-8daf-4dc463c25231" msprop:FriendlyName="DIM_DescubrimientoPlanetas" msprop:TableType="Table" msprop:DbTableName="DIM_DescubrimientoPlanetas">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="desc_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="desc_sk" msprop:DbColumnName="desc_sk" msprop:design-time-name="9fd21dd8-7758-47dc-b2ac-c836e01b45dd" type="xs:int" />
+                  <xs:element name="descubrimiento_id" msprop:FriendlyName="descubrimiento_id" msprop:DbColumnName="descubrimiento_id" msprop:design-time-name="b304cad7-8a75-4b1b-aaf6-594a903070ca" type="xs:int" />
+                  <xs:element name="disc_centro_instalacion" msprop:FriendlyName="disc_centro_instalacion" msprop:DbColumnName="disc_centro_instalacion" msprop:design-time-name="74d0cb84-b6f7-4948-8623-2a4f0d053610">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="disc_telescopio" msprop:FriendlyName="disc_telescopio" msprop:DbColumnName="disc_telescopio" msprop:design-time-name="3d9ab341-ee0b-4fc6-8977-d446f9a28099">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="disc_metodo" msprop:FriendlyName="disc_metodo" msprop:DbColumnName="disc_metodo" msprop:design-time-name="e0cbce7c-297c-4159-8eab-5e6d0a28bb00" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="disc_locacion" msprop:FriendlyName="disc_locacion" msprop:DbColumnName="disc_locacion" msprop:design-time-name="d44cdbcc-9d78-42c8-8993-90928e039be2">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_Estrellas" msprop:DbSchemaName="dbo" msprop:design-time-name="99d47c4b-ab46-48b0-bdae-d9dbebaca39e" msprop:FriendlyName="DIM_Estrellas" msprop:TableType="Table" msprop:DbTableName="DIM_Estrellas">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="st_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="st_sk" msprop:DbColumnName="st_sk" msprop:design-time-name="59582a9f-be70-4db4-9172-363d598d9455" type="xs:int" />
+                  <xs:element name="st_id" msprop:FriendlyName="st_id" msprop:DbColumnName="st_id" msprop:design-time-name="2836d1f5-afa3-4153-bd99-b211b494491a" type="xs:int" />
+                  <xs:element name="st_nombre" msprop:FriendlyName="st_nombre" msprop:DbColumnName="st_nombre" msprop:design-time-name="8553f222-e334-4a36-964c-75a26d17da9c">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="st_temperatura_K" msprop:FriendlyName="st_temperatura_K" msprop:DbColumnName="st_temperatura_K" msprop:design-time-name="c2d45f5c-1666-4d9e-a890-41939da148f2" type="xs:int" />
+                  <xs:element name="st_radio_sol" msprop:FriendlyName="st_radio_sol" msprop:DbColumnName="st_radio_sol" msprop:design-time-name="edcf51aa-1fdf-46e4-a025-40e27e402ff4" type="xs:double" />
+                  <xs:element name="st_masa_sol" msprop:FriendlyName="st_masa_sol" msprop:DbColumnName="st_masa_sol" msprop:design-time-name="ab21d9d9-d70a-4b16-a827-28f0bd3c1752" type="xs:double" />
+                  <xs:element name="st_luminosidad" msprop:FriendlyName="st_luminosidad" msprop:DbColumnName="st_luminosidad" msprop:design-time-name="768d6fc2-36b8-4a47-afc1-263d6fe4497b" type="xs:double" />
+                  <xs:element name="st_edad" msprop:FriendlyName="st_edad" msprop:DbColumnName="st_edad" msprop:design-time-name="f388651a-d8ae-4d95-962e-d9a51a43e2df" type="xs:double" />
+                  <xs:element name="st_densidad" msprop:FriendlyName="st_densidad" msprop:DbColumnName="st_densidad" msprop:design-time-name="36237f94-2f0d-474b-bf3f-f2b86c38f8fc" type="xs:double" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_SistemasPlanetarios" msprop:DbSchemaName="dbo" msprop:design-time-name="76d61e04-3866-4511-bfe7-a0cb1fb03f1d" msprop:FriendlyName="DIM_SistemasPlanetarios" msprop:TableType="Table" msprop:DbTableName="DIM_SistemasPlanetarios">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="sy_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="sy_sk" msprop:DbColumnName="sy_sk" msprop:design-time-name="3158288a-649f-496a-b783-4a4be9d07303" type="xs:int" />
+                  <xs:element name="sy_id" msprop:FriendlyName="sy_id" msprop:DbColumnName="sy_id" msprop:design-time-name="8f73efb9-8269-461e-ac94-93a34c5e8ba1" type="xs:int" />
+                  <xs:element name="sy_nombre" msprop:FriendlyName="sy_nombre" msprop:DbColumnName="sy_nombre" msprop:design-time-name="f5b6d04b-a71e-418b-896e-a7a22f5073e7">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sy_constelacion" msprop:FriendlyName="sy_constelacion" msprop:DbColumnName="sy_constelacion" msprop:design-time-name="159e170f-eb19-4917-994f-4f4b497bda18">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sy_estrellamasbrillante" msprop:FriendlyName="sy_estrellamasbrillante" msprop:DbColumnName="sy_estrellamasbrillante" msprop:design-time-name="f18d9f8f-2e6e-45df-aabb-05d79a3fafcc">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sy_numero_estrellas" msprop:FriendlyName="sy_numero_estrellas" msprop:DbColumnName="sy_numero_estrellas" msprop:design-time-name="3240bb11-76f4-447e-9691-ab3260dc00e3" type="xs:int" />
+                  <xs:element name="sy_numero_planetas" msprop:FriendlyName="sy_numero_planetas" msprop:DbColumnName="sy_numero_planetas" msprop:design-time-name="bf3a6c0e-8b96-42f0-acab-1419d98b713c" type="xs:int" />
+                  <xs:element name="sy_distancia" msprop:FriendlyName="sy_distancia" msprop:DbColumnName="sy_distancia" msprop:design-time-name="fb34dcdf-99e8-4a5e-b3e1-3246051ac0af" type="xs:double" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_Tiempo" msprop:DbSchemaName="dbo" msprop:design-time-name="0a9371dd-7ea5-4253-8d44-483f3a564a48" msprop:FriendlyName="DIM_Tiempo" msprop:TableType="Table" msprop:DbTableName="DIM_Tiempo">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="tiempo_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="tiempo_sk" msprop:DbColumnName="tiempo_sk" msprop:design-time-name="2cb33025-c273-4e34-848d-e80db4cf3ad2" type="xs:int" />
+                  <xs:element name="fecha" msprop:FriendlyName="fecha" msprop:DbColumnName="fecha" msprop:design-time-name="a78cd6cc-70bd-470c-a9d1-7e8fd50652ed" type="xs:dateTime" />
+                  <xs:element name="mes" msprop:FriendlyName="mes" msprop:DbColumnName="mes" msprop:design-time-name="94cba076-d4b2-4495-8864-2911933700fe" type="xs:int" />
+                  <xs:element name="año" msprop:FriendlyName="año" msprop:DbColumnName="año" msprop:design-time-name="501526bd-5000-45d0-b130-f9fe3541dd2a" type="xs:int" />
+                  <xs:element name="trimestre" msprop:FriendlyName="trimestre" msprop:DbColumnName="trimestre" msprop:design-time-name="c3bdd33a-bd83-431f-85c0-d9517c20a061" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_Exoplanetas" msprop:DbSchemaName="dbo" msprop:design-time-name="72f1ecf2-3fb4-4fda-be2f-a23f90cb7f3b" msprop:FriendlyName="FACT_Exoplanetas" msprop:TableType="Table" msprop:DbTableName="FACT_Exoplanetas">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="fact_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="fact_id" msprop:DbColumnName="fact_id" msprop:design-time-name="bcfb1f1b-a018-4bb1-8e76-6cad57686c51" type="xs:int" />
+                  <xs:element name="sy_sk" msprop:FriendlyName="sy_sk" msprop:DbColumnName="sy_sk" msprop:design-time-name="f7960bbf-e3c4-4232-a40f-2b7d53ec96af" type="xs:int" />
+                  <xs:element name="st_sk" msprop:FriendlyName="st_sk" msprop:DbColumnName="st_sk" msprop:design-time-name="048db657-d9f6-4096-99c4-425d4f01bac3" type="xs:int" />
+                  <xs:element name="desc_sk" msprop:FriendlyName="desc_sk" msprop:DbColumnName="desc_sk" msprop:design-time-name="7770145e-7c69-4c64-8ff0-94e366f66b4e" type="xs:int" minOccurs="0" />
+                  <xs:element name="clasif_sk" msprop:FriendlyName="clasif_sk" msprop:DbColumnName="clasif_sk" msprop:design-time-name="9414f7b9-b2df-46c9-b4e1-020f46d86529" type="xs:int" minOccurs="0" />
+                  <xs:element name="tiempo_sk" msprop:FriendlyName="tiempo_sk" msprop:DbColumnName="tiempo_sk" msprop:design-time-name="b7a4c1c8-4b16-414f-942d-f090a209c4ba" type="xs:int" minOccurs="0" />
+                  <xs:element name="pl_nombre" msprop:FriendlyName="pl_nombre" msprop:DbColumnName="pl_nombre" msprop:design-time-name="d6274013-8d81-46df-96db-4d8487f1c815">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pl_periodo_orbital_dias" msprop:FriendlyName="pl_periodo_orbital_dias" msprop:DbColumnName="pl_periodo_orbital_dias" msprop:design-time-name="6f8faecf-7761-40de-a460-7098ed3fd22e" type="xs:double" />
+                  <xs:element name="pl_radio_tierra" msprop:FriendlyName="pl_radio_tierra" msprop:DbColumnName="pl_radio_tierra" msprop:design-time-name="3e90c6ac-b94b-426e-8e1f-822a0e49a51d" type="xs:double" />
+                  <xs:element name="pl_mass_tierra" msprop:FriendlyName="pl_mass_tierra" msprop:DbColumnName="pl_mass_tierra" msprop:design-time-name="74f08e66-69f4-4a3e-8416-ac15fb804a0c" type="xs:double" />
+                  <xs:element name="pl_densidad" msprop:FriendlyName="pl_densidad" msprop:DbColumnName="pl_densidad" msprop:design-time-name="56d20bef-3988-42df-8267-588e98b7d5e5" type="xs:double" />
+                  <xs:element name="pl_temperatura" msprop:FriendlyName="pl_temperatura" msprop:DbColumnName="pl_temperatura" msprop:design-time-name="4f98901d-9be0-4b81-bb87-554397c612b9" type="xs:int" />
+                  <xs:element name="pl_esi" msprop:FriendlyName="pl_esi" msprop:DbColumnName="pl_esi" msprop:design-time-name="ac0b9eaa-51c5-4391-9233-6b6e66eb11c0" type="xs:double" />
+                  <xs:element name="pl_años_luz_tierra" msprop:FriendlyName="pl_años_luz_tierra" msprop:DbColumnName="pl_años_luz_tierra" msprop:design-time-name="36f14986-f51e-4260-be05-5eccd7fa0608" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_ClasificacionPlanetas" />
+          <xs:field xpath="clasif_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_DescubrimientoPlanetas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_DescubrimientoPlanetas" />
+          <xs:field xpath="desc_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_Estrellas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_Estrellas" />
+          <xs:field xpath="st_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_SistemasPlanetarios_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_SistemasPlanetarios" />
+          <xs:field xpath="sy_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_Tiempo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_Tiempo" />
+          <xs:field xpath="tiempo_sk" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_Exoplanetas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_Exoplanetas" />
+          <xs:field xpath="fact_id" />
+        </xs:unique>
+        <xs:keyref name="FK__FACT_Exop__clasi__440B1D61" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FACT_Exoplanetas" />
+          <xs:field xpath="clasif_sk" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_Exop__desc___4316F928" refer="dbo_DIM_DescubrimientoPlanetas_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_Exoplanetas" />
+          <xs:field xpath="desc_sk" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_Exop__tiemp__44FF419A" refer="dbo_DIM_Tiempo_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_Exoplanetas" />
+          <xs:field xpath="tiempo_sk" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_Exop__st_sk__4222D4EF" refer="dbo_DIM_Estrellas_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_Exoplanetas" />
+          <xs:field xpath="st_sk" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_Exop__sy_sk__412EB0B6" refer="dbo_DIM_SistemasPlanetarios_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_Exoplanetas" />
+          <xs:field xpath="sy_sk" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Sistemas_x0020_Planetarios_x0020_DW2 xmlns="" />
+  </Schema>
+</DataSourceView>

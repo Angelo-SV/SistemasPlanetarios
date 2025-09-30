@@ -1,0 +1,60 @@
+# ========================================
+# Gitignore para Proyecto BI Sistemas Planetarios
+# ========================================
+
+# Archivos de sistema
+*.tmp
+*.log
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Archivos de Visual Studio / SSIS / SSAS
+*.user
+*.suo
+*.cache
+*.vshost.*
+*.ncb
+*.opendb
+*.dbmdl
+*.mdf
+*.ldf
+*.rdl.data
+*.rdl.rds
+*.rptproj.user
+*.ssms
+
+# Carpetas de Visual Studio
+.vs/
+bin/
+obj/
+Debug/
+Release/
+GeneratedReports/
+PublishProfiles/
+
+# Archivos de KNIME temporales
+.knime/
+*.knar
+
+# Power BI
+*.pbit
+*.pbix.autosave
+
+# Archivos comprimidos o exportaciones
+*.zip
+*.rar
+*.7z
+
+# ========================================
+# Excepciones
+# ========================================
+!SQL/*.sql
+!Knime/*.knwf
+!IntegrationServices/*.dtsx
+!AnalysisServices/*.asdatabase
+!PowerBI/*.pbix
+!CapturasPantalla/*

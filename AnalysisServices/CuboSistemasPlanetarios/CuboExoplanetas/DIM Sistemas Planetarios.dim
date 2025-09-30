@@ -1,0 +1,219 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a18b0264-c343-47cf-bff1-287d8a955cdb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM Sistemas Planetarios</ID>
+  <Name>DIM Sistemas Planetarios</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2a188c06-a6e6-42a3-b75f-d0c7a680667f">
+    <DataSourceViewID>Sistemas Planetarios DW2</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="1f4ed324-d028-4528-8bb6-b5a420940f3a">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b074749f-9949-4157-942c-73000c5debf4">
+      <ID>Sy Sk</ID>
+      <Name>Sy Sk</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="73370954-5887-4a13-8ec5-fb451c0a90e7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ce9c11d-d38f-43b5-b6db-9c75251828cb">
+            <TableID>dbo_DIM_SistemasPlanetarios</TableID>
+            <ColumnID>sy_sk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="26d34108-6149-47a1-b316-6505dd81d7da">
+          <AttributeID>Sy Id</AttributeID>
+          <Name>Sy Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3b23550c-58ee-48e8-bc85-ff1cbfb90b2c">
+          <AttributeID>Sy Nombre</AttributeID>
+          <Name>Sy Nombre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3f60eaf1-91cf-487a-bc72-63e1b682e62e">
+          <AttributeID>Sy Constelacion</AttributeID>
+          <Name>Sy Constelacion</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="94d74029-f21d-4b31-b740-4d7809fc73bf">
+          <AttributeID>Sy Estrellamasbrillante</AttributeID>
+          <Name>Sy Estrellamasbrillante</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d29afbda-2fe0-4bcf-a0ee-44e6d953ab1e">
+          <AttributeID>Sy Numero Estrellas</AttributeID>
+          <Name>Sy Numero Estrellas</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="90961b8d-bce2-43a1-8a08-b4fc11f3e154">
+          <AttributeID>Sy Numero Planetas</AttributeID>
+          <Name>Sy Numero Planetas</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3bd8f1ea-f23a-47e0-b9b5-8e10189db244">
+          <AttributeID>Sy Distancia</AttributeID>
+          <Name>Sy Distancia</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="800bf9cd-54f0-408b-996e-9c0d08db35c1">
+      <ID>Sy Id</ID>
+      <Name>Sy Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cefa2431-b8e7-4c08-9bb8-74770c5bc03f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cbec44c1-1072-4445-a235-fa2249bfca8c">
+            <TableID>dbo_DIM_SistemasPlanetarios</TableID>
+            <ColumnID>sy_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b04e0f91-54ba-4228-aad8-a5fc0c07aa6a">
+      <ID>Sy Nombre</ID>
+      <Name>Sy Nombre</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a2bf098c-c71f-46a2-9852-ac57745e8b08">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95f8ea05-8bc7-460b-8bc3-febbce733bff">
+            <TableID>dbo_DIM_SistemasPlanetarios</TableID>
+            <ColumnID>sy_nombre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c3c8588e-be4c-48a5-ae77-3491f1707712">
+      <ID>Sy Constelacion</ID>
+      <Name>Sy Constelacion</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a7f8806c-a501-4957-93e6-e92da3a91cf9">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6fa9262-7ab6-4de8-8f12-e2f56a24efda">
+            <TableID>dbo_DIM_SistemasPlanetarios</TableID>
+            <ColumnID>sy_constelacion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="460ce4f0-3f6f-4876-bf2a-2f3471239cdf">
+      <ID>Sy Estrellamasbrillante</ID>
+      <Name>Sy Estrellamasbrillante</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7fd48839-3df7-4f0a-878d-ca00a9ac50b8">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af1afa29-0ee8-40a7-b287-cc0de037cf5f">
+            <TableID>dbo_DIM_SistemasPlanetarios</TableID>
+            <ColumnID>sy_estrellamasbrillante</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9fada066-c4e6-41ef-8cf2-e936a435e1c5">
+      <ID>Sy Numero Estrellas</ID>
+      <Name>Sy Numero Estrellas</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f05f247b-382d-488c-9d74-c4195d5d0ec2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d194847-1bfc-4f0c-ad62-70b54622c462">
+            <TableID>dbo_DIM_SistemasPlanetarios</TableID>
+            <ColumnID>sy_numero_estrellas</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d6874df1-269f-4506-8e28-965a249a3d2b">
+      <ID>Sy Numero Planetas</ID>
+      <Name>Sy Numero Planetas</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c0fa5070-7169-4f81-bb80-a9ee2d82d642">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d378e4bb-45d9-4c41-8b66-862e5194cb49">
+            <TableID>dbo_DIM_SistemasPlanetarios</TableID>
+            <ColumnID>sy_numero_planetas</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b756477b-b952-462c-b591-2878625bb075">
+      <ID>Sy Distancia</ID>
+      <Name>Sy Distancia</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="472b2ce4-a75f-401c-b97f-98363b77a5d1">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9503318e-eefa-4c57-a6c5-19be72d076af">
+            <TableID>dbo_DIM_SistemasPlanetarios</TableID>
+            <ColumnID>sy_distancia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

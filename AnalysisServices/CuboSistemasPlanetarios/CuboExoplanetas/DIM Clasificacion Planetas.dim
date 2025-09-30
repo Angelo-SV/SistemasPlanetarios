@@ -1,0 +1,182 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="01cb76c0-7c8f-4c10-890d-e690fa6d68b7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM Clasificacion Planetas</ID>
+  <Name>DIM Clasificacion Planetas</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3eab9701-a327-4863-b3fb-09fd9b095093">
+    <DataSourceViewID>Sistemas Planetarios DW2</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="be01300c-2e0b-40a0-92a4-280ec865c7f0">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="bd8b7f05-1ad9-4076-86c6-4f6070e78e62">
+      <ID>Clasif Sk</ID>
+      <Name>Clasif Sk</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="908dd5a6-1cec-42fd-b6bd-57c68da3b1f3">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8cd395e2-eb4d-4344-b9eb-b0ac51db1aee">
+            <TableID>dbo_DIM_ClasificacionPlanetas</TableID>
+            <ColumnID>clasif_sk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="01152494-eb22-4f25-8236-d80c38289df7">
+          <AttributeID>Pl Clasificacion Id</AttributeID>
+          <Name>Pl Clasificacion Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="33807bbf-5b1a-448f-891c-22ed6b66947f">
+          <AttributeID>Pl Tipo</AttributeID>
+          <Name>Pl Tipo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f05b1dc0-5d03-47ea-8846-fc760ff8f3cc">
+          <AttributeID>Pl Categoria</AttributeID>
+          <Name>Pl Categoria</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eb69e498-9e81-4581-8748-295f1a340fbb">
+          <AttributeID>Pl Clasificacion Temperatura</AttributeID>
+          <Name>Pl Clasificacion Temperatura</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="92df196a-9c4b-42a2-bd80-97adba445cb2">
+          <AttributeID>Pl Status</AttributeID>
+          <Name>Pl Status</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="db32ace7-ae73-4c55-b7fb-d930b94f75d0">
+      <ID>Pl Clasificacion Id</ID>
+      <Name>Pl Clasificacion Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="04549aa0-2fab-4360-8da0-e339c3059ddf">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba65056e-8056-4a2e-84d3-9fee589b567e">
+            <TableID>dbo_DIM_ClasificacionPlanetas</TableID>
+            <ColumnID>pl_clasificacion_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="811721d5-b584-4696-aac5-e6c2cb712967">
+      <ID>Pl Tipo</ID>
+      <Name>Pl Tipo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="39aeae44-e5ed-444d-b7a7-2063073bc29c">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="01a43b3a-811a-4208-a3bd-7211c9f14dd0">
+            <TableID>dbo_DIM_ClasificacionPlanetas</TableID>
+            <ColumnID>pl_tipo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="160fa7e7-44d1-4374-a567-c03eccd71bc5">
+      <ID>Pl Categoria</ID>
+      <Name>Pl Categoria</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fd2dc2b0-404c-4efc-a0af-acc1ea7cb9e4">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="391ac419-8c01-414b-aa82-bb6fa54dc3e5">
+            <TableID>dbo_DIM_ClasificacionPlanetas</TableID>
+            <ColumnID>pl_categoria</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fb0972e4-7041-4d3f-b31d-c3e99f0664ab">
+      <ID>Pl Clasificacion Temperatura</ID>
+      <Name>Pl Clasificacion Temperatura</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0a853adc-a7fb-4c5d-9b45-4a1e45249775">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ed40867-d80e-4a89-8a71-12c866039f67">
+            <TableID>dbo_DIM_ClasificacionPlanetas</TableID>
+            <ColumnID>pl_clasificacion_temperatura</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="42ea91d0-4ff0-4853-a021-a249e3fd8910">
+      <ID>Pl Status</ID>
+      <Name>Pl Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5879c504-8659-42d7-8a7c-0eadd69c6bb3">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b8870fc-d412-445d-82ee-c52e4d6081cb">
+            <TableID>dbo_DIM_ClasificacionPlanetas</TableID>
+            <ColumnID>pl_status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

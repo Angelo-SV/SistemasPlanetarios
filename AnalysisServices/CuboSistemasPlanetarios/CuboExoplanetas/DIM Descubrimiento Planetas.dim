@@ -1,0 +1,182 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="837daf88-94ea-4261-a42d-7a78c5d93950" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM Descubrimiento Planetas</ID>
+  <Name>DIM Descubrimiento Planetas</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="58d753c2-cab7-4ce1-b54c-76fa429a959d">
+    <DataSourceViewID>Sistemas Planetarios DW2</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="3b73be32-d033-439f-ac18-3be3f3805467">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="4e49a973-dfca-4cfb-bf59-074f5a622d9b">
+      <ID>Desc Sk</ID>
+      <Name>Desc Sk</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d287b55-7cee-4cd2-a6cc-d75b230f6d10">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff3b8916-1ff2-4836-b5df-6404a427d2cc">
+            <TableID>dbo_DIM_DescubrimientoPlanetas</TableID>
+            <ColumnID>desc_sk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9d56e5b6-d30d-48ec-8ef3-a10a2f490baf">
+          <AttributeID>Descubrimiento Id</AttributeID>
+          <Name>Descubrimiento Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8074b570-59bd-4c57-8274-e72788b66275">
+          <AttributeID>Disc Centro Instalacion</AttributeID>
+          <Name>Disc Centro Instalacion</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a8b76496-5315-43e6-b777-efd6809150cb">
+          <AttributeID>Disc Telescopio</AttributeID>
+          <Name>Disc Telescopio</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4557904e-7ca9-4578-b482-c3abcd515c18">
+          <AttributeID>Disc Metodo</AttributeID>
+          <Name>Disc Metodo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0ee0393e-f3a3-48f1-bd9e-6a71349a7e19">
+          <AttributeID>Disc Locacion</AttributeID>
+          <Name>Disc Locacion</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e907b1ce-0172-4282-afd1-b4c4d9ef690f">
+      <ID>Descubrimiento Id</ID>
+      <Name>Descubrimiento Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="02d791e5-a8d4-4d8f-b58b-f63a9db20f8a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2afd3dd0-2743-4eb6-a80f-75884e32cb31">
+            <TableID>dbo_DIM_DescubrimientoPlanetas</TableID>
+            <ColumnID>descubrimiento_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="afe16f1e-77e3-4930-8378-da87072a92ac">
+      <ID>Disc Centro Instalacion</ID>
+      <Name>Disc Centro Instalacion</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="afd4d0e3-2dd8-42cd-831e-9d053e3d92b8">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="37a6d4df-28f9-4492-8fe9-9e1a71ca28c4">
+            <TableID>dbo_DIM_DescubrimientoPlanetas</TableID>
+            <ColumnID>disc_centro_instalacion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="07d226d5-1793-43c1-b8da-4d90d0ebf170">
+      <ID>Disc Telescopio</ID>
+      <Name>Disc Telescopio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f96ab9c8-c605-4e3f-9b5e-3c788f3771de">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ffa83feb-c3c2-4b15-8e92-3392c1b77162">
+            <TableID>dbo_DIM_DescubrimientoPlanetas</TableID>
+            <ColumnID>disc_telescopio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8d99138f-9597-4ec7-942e-07fb22c51eaf">
+      <ID>Disc Metodo</ID>
+      <Name>Disc Metodo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c2e0f3ce-afa2-4e12-959a-7658cd3f6a0f">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="485d004a-7599-4bd5-9c7d-0365d5e0e99a">
+            <TableID>dbo_DIM_DescubrimientoPlanetas</TableID>
+            <ColumnID>disc_metodo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e4b76c94-6731-4fcd-a4ce-232645339277">
+      <ID>Disc Locacion</ID>
+      <Name>Disc Locacion</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2d09fd64-694b-4a59-b772-d301e161d5a4">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dd15bec8-3f86-49df-9f07-6a5984d139af">
+            <TableID>dbo_DIM_DescubrimientoPlanetas</TableID>
+            <ColumnID>disc_locacion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
