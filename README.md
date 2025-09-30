@@ -120,7 +120,7 @@ Scripts en: `SQL/02_Creacion_DW.sql`
 File: `AnalysisServices/Cubo_SistemasPlanetarios.asdatabase`
 
 **SSAS Cube screenshot:**  
-![Cubo SSAS](./Screenshots/CuboAnalysisServices.png)
+![Cubo SSAS](./Screenshots/CuboAnalisysServices.png)
 
 ---
 
@@ -135,7 +135,10 @@ A set of **5 interactive dashboards** was created, each focusing on a specific a
      - Brightest star by constellation  
      - Planets per planetary system  
      - Average system distance to Earth  
-     - Top constellations with more systems  
+     - Top constellations with more systems
+
+**"Sistemas Planetarios" Dashboard:**  
+![Dashboard Power BI](./Screenshots/Dashboard_SistemasPlanetarios.png)
 
 2. **Exoplanet Classification and Characteristics**  
    - Tab: `Clasificación de Planetas`  
@@ -143,7 +146,10 @@ A set of **5 interactive dashboards** was created, each focusing on a specific a
      - Distribution by temperature  
      - Discovery status (confirmed, controversial, etc.)  
      - Distribution by planet type (Super Earth, Gas Giant, etc.)  
-     - Distribution by planet category  
+     - Distribution by planet category
+    
+ **"Clasificacion PLanetas" Dashboard:**  
+![Dashboard Power BI](./Screenshots/Dashboard_ClasificacionPlanetas.png)
 
 3. **Discovery Centers and Detection Techniques**  
    - Tab: `Descubrimiento`  
@@ -151,25 +157,31 @@ A set of **5 interactive dashboards** was created, each focusing on a specific a
      - Map of telescopes and observation centers  
      - Most efficient discovery technique  
      - Top telescopes detecting planets  
-     - Planet discoveries over time  
+     - Planet discoveries over time
+
+ **"Descubrimientos" Dashboard:**  
+![Dashboard Power BI](./Screenshots/Dashboard_Descubrimientos.png)
 
 4. **Physical and Orbital Properties of Exoplanets**  
    - Tab: `Propiedades Exoplanetas` 
    - Metrics:  
      - Stellar temperature vs orbital period  
      - Planetary radius vs mass  
-     - Planetary radii distribution by classification  
+     - Planetary radii distribution by classification
+    
+ **"Propiedades Exoplanetas" Dashboard:**  
+![Dashboard Power BI](./Screenshots/Dashboard_PropiedadesExoplanetas.png)
 
 5. **Potentially Habitable Exoplanets**  
-   - Tab: `Planetas Habitables` 
+   - Tab: `Exoplanetas Potencialmente Habitables` 
    - Metrics:  
      - Ranking of exoplanets with the highest ESI  
-     - Detailed profile by selected planet (star, constellation, type, category, distance, etc.)  
+     - Detailed profile by selected planet (star, constellation, type, category, distance, etc.)
+    
+ **"Planetas Habitables" Dashboard:**  
+![Dashboard Power BI](./Screenshots/Dashboard_PlanetasHabitables.png)
 
 File: `PowerBI/Dashboard_Exoplanetas.pbix` 
-
-**"Sistemas Planetarios" Dashboard:**  
-![Dashboard Power BI](./Screenshots/PowerBI.png)
 
 ---
 
