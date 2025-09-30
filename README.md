@@ -21,9 +21,9 @@ Proyecto-BI-Sistemas-Planetarios
  ┣ 📂 Knime
  ┃ ┗ SistemasPlanetarios.knwf
  ┣ 📂 IntegrationServices
- ┃ ┗ SistemasPlanetarios.dtsx
+ ┃ ┗ 📂 SistemasPlanetarios
  ┣ 📂 AnalysisServices
- ┃ ┗ CuboSistemasPlanetarios.asdatabase
+ ┃ ┗ 📂 CuboSistemasPlanetarios
  ┣ 📂 PowerBI
  ┃ ┗ SistemasPlanetrios.pbix
  ┣ 📂 Screenshots
@@ -99,7 +99,7 @@ Scripts en: `SQL/02_Creacion_DW.sql`
 - Built **Data Flow Tasks** in SSIS to populate dimensions and fact table.  
 - Source: `SistemasPlanetrios` (OLTP)  
 - Target: `SistemasPlanetariosDW` (DW)  
-- Main package: `IntegrationServices/SistemasPlanetarios.dtsx`  
+- Main package: `IntegrationServices/SistemasPlanetarios.sln`  
 
 **SSIS data flow screenshot:**  
 ![Flujo SSIS](./Screenshots/IntegrationServicesFlow.png)
@@ -117,7 +117,7 @@ Scripts en: `SQL/02_Creacion_DW.sql`
   - Clasificación de Planetas  
   - Descubrimiento de Planetas 
  
-File: `AnalysisServices/Cubo_SistemasPlanetarios.asdatabase`
+File: `AnalysisServices/SistemasPlanetarios.sln`
 
 **SSAS Cube screenshot:**  
 ![Cubo SSAS](./Screenshots/CuboAnalisysServices.png)
@@ -181,7 +181,7 @@ A set of **5 interactive dashboards** was created, each focusing on a specific a
  **"Planetas Habitables" Dashboard:**  
 ![Dashboard Power BI](./Screenshots/Dashboard_PlanetasHabitables.png)
 
-File: `PowerBI/Dashboard_Exoplanetas.pbix` 
+File: `PowerBI/SistemasPlanetarios.pbix` 
 
 ---
 
